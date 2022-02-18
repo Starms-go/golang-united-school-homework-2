@@ -7,6 +7,12 @@ import (
 // Define custom int type to hold sides number and update CalcSquare signature by replacing #yourTypeNameHere#
 type sides int
 
+const (
+	SidesTriangle = 3
+	SidesSquare   = 4
+	SidesCircle   = 0
+)
+
 func CalcSquare(sideLen float64, sidesNum sides) float64 {
 	switch sidesNum {
 	case 0:
